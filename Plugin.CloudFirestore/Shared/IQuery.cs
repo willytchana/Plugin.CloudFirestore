@@ -17,6 +17,8 @@ namespace Plugin.CloudFirestore
         IQuery OrderBy(FieldPath field, bool descending);
         IQuery WhereEqualsTo(string field, object? value);
         IQuery WhereEqualsTo(FieldPath field, object? value);
+        IQuery WhereNotEqualsTo(string field, object? value);
+        IQuery WhereNotEqualsTo(FieldPath field, object? value);
         IQuery WhereGreaterThan(string field, object value);
         IQuery WhereGreaterThan(FieldPath field, object value);
         IQuery WhereGreaterThanOrEqualsTo(string field, object value);
